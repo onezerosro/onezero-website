@@ -177,8 +177,8 @@
         `Interest: ${data.interest || "-"}\n\n` +
         `${data.message || ""}`
       );
-      window.location.href = `mailto:hello@onezero.sk?subject=${subject}&body=${body}`;
-      note.textContent = "Opening your email app… If nothing happens, write to hello@onezero.sk.";
+      window.location.href = `mailto:onezerosro@gmail.com?subject=${subject}&body=${body}`;
+      note.textContent = "Opening your email app… If nothing happens, write to onezerosro@gmail.com.";
       note.className = "form__note is-ok";
       form.reset();
     });

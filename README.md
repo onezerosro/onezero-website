@@ -28,17 +28,17 @@ python3 -m http.server 8000
 Drag the folder into **Netlify Drop**, **Vercel**, **Cloudflare Pages**, or any static host
 (GitHub Pages, S3 + CloudFront, etc.). No configuration required.
 
-## ⚠️ Placeholders to replace before going live
+## Review before going live
 
-These are stand-ins — search & replace across `index.html` (and `script.js` for the email):
+Company contact details (email, phone, registered address, IČO/DIČ) are filled in with
+the real **Onezero s. r. o.** data. Still worth a look:
 
-- **Email:** `hello@onezero.sk`
-- **Phone:** `+421 900 000 000`
-- **Company registration:** `IČO: 00 000 000 · DIČ: 0000000000`
-- **Address / HQ:** currently "Slovakia · remote-first across the EU"
-- **Stats** (years, uptime, cost reduction) — adjust to real figures in the `.stat` blocks
-- **Privacy / Terms** footer links (`href="#"`)
-- Optional: add a real logo, social links, and Open Graph image (`og:image`)
+- **Stats** (years, uptime, cost reduction) in the `.stat` blocks of `index.html` are
+  illustrative — set real figures.
+- **Privacy / Terms** footer links point to `#` — add real pages or remove them.
+- Optional: a real logo, social links, and an Open Graph image (`og:image`).
+- Email currently uses `onezerosro@gmail.com`; once mail on the onezero.sk domain is set
+  up, you can switch to e.g. `info@onezero.sk`.
 
 ## Customising
 
