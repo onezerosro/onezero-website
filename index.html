@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onezero — Digital Business Solutions | SASE, SD-WAN, Network Engineering & AI</title>
+  <meta name="description" content="Onezero s.r.o. delivers digital business solutions: cybersecurity and SASE, SD-WAN, network engineering consultancy and implementation, and AI-driven business operations optimization." />
+  <meta name="theme-color" content="#060913" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Onezero — Digital Business Solutions" />
+  <meta property="og:description" content="Cybersecurity & SASE, SD-WAN, network engineering, and AI-driven operations — engineered end to end." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon: binary 1/0 mark -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060913'/%3E%3Crect x='9' y='8' width='3.2' height='16' rx='1.6' fill='%2338bdf8'/%3E%3Ccircle cx='20.5' cy='16' r='5.4' fill='none' stroke='%23818cf8' stroke-width='3.2'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Skip link ===== -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Onezero home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30">
+            <rect x="9" y="6" width="3.4" height="20" rx="1.7" fill="currentColor"/>
+            <circle cx="21" cy="16" r="6.4" fill="none" stroke="currentColor" stroke-width="3.4"/>
+          </svg>
+        </span>
+        <span class="brand__name">Onezero<span class="brand__dot">.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact" class="btn btn--sm btn--primary">Talk to us</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#industries">Industries</a>
+      <a href="#contact" class="btn btn--primary btn--block">Talk to us</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <canvas class="hero__canvas" id="netCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">
+          <span class="eyebrow__dot"></span> Digital Business Solutions
+        </p>
+        <h1 class="hero__title reveal">
+          From <span class="grad">one</span> to <span class="grad">zero</span> friction across your digital infrastructure.
+        </h1>
+        <p class="hero__sub reveal">
+          Onezero engineers secure, software-defined networks and AI-driven operations —
+          so your business connects faster, runs leaner, and stays protected everywhere.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#services" class="btn btn--primary btn--lg">Explore services</a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Book a consultation</a>
+        </div>
+
+        <ul class="hero__chips reveal" aria-label="Core capabilities">
+          <li>Cybersecurity &amp; SASE</li>
+          <li>SD-WAN</li>
+          <li>Network Engineering</li>
+          <li>AI-Driven Operations</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats" aria-label="By the numbers">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="15" data-suffix="+">0</span>
+          <span class="stat__label">Years of combined engineering expertise</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="99.99" data-suffix="%" data-decimals="2">0</span>
+          <span class="stat__label">Network uptime we design and operate to</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="40" data-suffix="%">0</span>
+          <span class="stat__label">Typical WAN cost reduction with SD-WAN</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="24" data-suffix="/7">0</span>
+          <span class="stat__label">Monitoring and response coverage</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> What we do</p>
+          <h2 class="section__title">Solutions engineered end to end</h2>
+          <p class="section__lead">
+            Four practices, one delivery team. We architect, build, and operate the
+            connectivity, security, and intelligence your business runs on.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Cybersecurity &amp; SASE</h3>
+            <p class="card__text">
+              Converged security and networking delivered from the cloud. We design and
+              roll out Zero Trust access, secure web gateways, CASB, FWaaS, and ZTNA
+              that protect your users and data anywhere they work.
+            </p>
+            <ul class="card__list">
+              <li>Zero Trust Network Access (ZTNA)</li>
+              <li>Cloud-delivered SWG, CASB &amp; FWaaS</li>
+              <li>Threat protection &amp; data security</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/>
+                <circle cx="12" cy="18" r="2.2"/>
+                <path d="M7 6.5c3 2 7 2 10 0M6 8l5.2 8M18 8l-5.2 8"/>
+              </svg>
+            </div>
+            <h3 class="card__title">SD-WAN</h3>
+            <p class="card__text">
+              Intelligent, application-aware connectivity that lowers cost and raises
+              performance across every site, cloud, and remote user — with centralized
+              policy and full visibility.
+            </p>
+            <ul class="card__list">
+              <li>Application-aware routing &amp; QoS</li>
+              <li>Multi-cloud and branch connectivity</li>
+              <li>Centralized orchestration &amp; analytics</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="5" rx="1.5"/>
+                <rect x="3" y="15" width="18" height="5" rx="1.5"/>
+                <path d="M7 6.5h.01M7 17.5h.01M12 9v6"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Network Engineering Consultancy &amp; Implementation</h3>
+            <p class="card__text">
+              From architecture and design to deployment and day-2 operations — senior
+              engineers who build resilient, scalable networks and migrate you there
+              with zero drama.
+            </p>
+            <ul class="card__list">
+              <li>Architecture, design &amp; audits</li>
+              <li>Deployment, migration &amp; automation</li>
+              <li>Managed operations &amp; optimization</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="7" width="14" height="11" rx="2.5"/>
+                <path d="M12 7V4M9 3h6M9.5 12h.01M14.5 12h.01M9 16h6"/>
+                <path d="M2 11v3M22 11v3"/>
+              </svg>
+            </div>
+            <h3 class="card__title">AI-Driven Business Operations</h3>
+            <p class="card__text">
+              We embed AI into your operations to automate workflows, surface insight,
+              and accelerate solution delivery — turning data and tooling into measurable
+              business outcomes.
+            </p>
+            <ul class="card__list">
+              <li>Process automation &amp; AI copilots</li>
+              <li>Operational analytics &amp; insight</li>
+              <li>Rapid, AI-assisted solution delivery</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Approach ===== -->
+    <section class="section section--alt" id="approach">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> How we deliver</p>
+          <h2 class="section__title">A clear path from idea to outcome</h2>
+          <p class="section__lead">
+            A pragmatic, low-risk delivery model that keeps you informed at every step.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Assess</h3>
+            <p>We map your environment, risks, and goals — then define the target architecture and a business case.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Architect</h3>
+            <p>Vendor-savvy designs for security, network, and AI that fit your scale, budget, and compliance needs.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Implement</h3>
+            <p>Phased deployment and migration with automation, testing, and zero-surprise cutovers.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Optimize</h3>
+            <p>Continuous monitoring, tuning, and AI-driven improvement so value compounds over time.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Why Onezero</p>
+          <h2 class="section__title">Engineering-first. Outcome-obsessed.</h2>
+          <p class="about__text">
+            Our name says it: everything digital comes down to <strong>one</strong> and
+            <strong>zero</strong>. We turn those building blocks into secure, high-performing
+            systems that move your business forward — without the complexity that usually
+            comes with it.
+          </p>
+          <p class="about__text">
+            Onezero s.r.o. is a team of senior network and security engineers paired with
+            AI practitioners. We stay vendor-savvy and outcome-driven, so you get the right
+            technology for the result you need — implemented by the people who designed it.
+          </p>
+
+          <ul class="features">
+            <li class="reveal"><span class="features__ico">✓</span> Security-first by default</li>
+            <li class="reveal"><span class="features__ico">✓</span> AI-native delivery</li>
+            <li class="reveal"><span class="features__ico">✓</span> Vendor-savvy, not vendor-locked</li>
+            <li class="reveal"><span class="features__ico">✓</span> Senior engineers, end to end</li>
+          </ul>
+        </div>
+
+        <aside class="about__panel reveal" aria-label="At a glance">
+          <div class="panel">
+            <div class="panel__row">
+              <span class="panel__k">Headquarters</span>
+              <span class="panel__v">Slovakia &middot; serving EU &amp; beyond</span>
+            </div>
+            <div class="panel__row">
+              <span class="panel__k">Focus</span>
+              <span class="panel__v">SASE &middot; SD-WAN &middot; Network &middot; AI Ops</span>
+            </div>
+            <div class="panel__row">
+              <span class="panel__k">Engagements</span>
+              <span class="panel__v">Consulting &middot; Implementation &middot; Managed</span>
+            </div>
+            <div class="panel__row">
+              <span class="panel__k">Model</span>
+              <span class="panel__v">Outcome-based delivery</span>
+            </div>
+            <a href="#contact" class="btn btn--primary btn--block">Start a conversation</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Industries ===== -->
+    <section class="section section--alt" id="industries">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Who we serve</p>
+          <h2 class="section__title">Built for distributed, regulated, fast-moving businesses</h2>
+        </header>
+        <div class="tags">
+          <span class="tag reveal">Financial Services</span>
+          <span class="tag reveal">Manufacturing &amp; Logistics</span>
+          <span class="tag reveal">Retail &amp; eCommerce</span>
+          <span class="tag reveal">Healthcare</span>
+          <span class="tag reveal">Public Sector</span>
+          <span class="tag reveal">Technology &amp; SaaS</span>
+          <span class="tag reveal">Professional Services</span>
+          <span class="tag reveal">Telco &amp; Service Providers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact / CTA ===== -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Let's talk</p>
+          <h2 class="section__title">Tell us where you're headed.</h2>
+          <p class="section__lead">
+            Share a few details and we'll get back within one business day to scope the
+            right approach for your goals.
+          </p>
+          <ul class="contact__list">
+            <li>
+              <span class="contact__ico" aria-hidden="true">✉</span>
+              <a href="mailto:hello@onezero.sk">hello@onezero.sk</a>
+            </li>
+            <li>
+              <span class="contact__ico" aria-hidden="true">☎</span>
+              <a href="tel:+421900000000">+421 900 000 000</a>
+            </li>
+            <li>
+              <span class="contact__ico" aria-hidden="true">⌖</span>
+              <span>Slovakia &middot; remote-first across the EU</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company name" />
+          </div>
+          <div class="field">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>Cybersecurity &amp; SASE</option>
+              <option>SD-WAN</option>
+              <option>Network Engineering &amp; Implementation</option>
+              <option>AI-Driven Business Operations</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="4" placeholder="A short description of your project or challenge"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Send message</button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="Onezero home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26">
+              <rect x="9" y="6" width="3.4" height="20" rx="1.7" fill="currentColor"/>
+              <circle cx="21" cy="16" r="6.4" fill="none" stroke="currentColor" stroke-width="3.4"/>
+            </svg>
+          </span>
+          <span class="brand__name">Onezero<span class="brand__dot">.</span></span>
+        </a>
+        <p class="footer__tag">Digital Business Solutions — secure, connected, intelligent.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Services">
+        <h4>Services</h4>
+        <a href="#services">Cybersecurity &amp; SASE</a>
+        <a href="#services">SD-WAN</a>
+        <a href="#services">Network Engineering</a>
+        <a href="#services">AI-Driven Operations</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#approach">Approach</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Onezero s.r.o.</h4>
+        <p class="footer__meta">Registered in the Slovak Republic</p>
+        <p class="footer__meta">IČO: 00&nbsp;000&nbsp;000 &middot; DIČ: 0000000000</p>
+        <p class="footer__meta"><a href="mailto:hello@onezero.sk">hello@onezero.sk</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bar">
+      <p>&copy; <span id="year">2026</span> Onezero s.r.o. All rights reserved.</p>
+      <p class="footer__legal"><a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
