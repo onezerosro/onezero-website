@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PolicyLens — Continuous Policy Audit & NIS2/DORA Posture | Onezero</title>
+  <meta name="description" content="PolicyLens by Onezero: continuous security-policy audit and NIS2/DORA compliance posture for multi-site networks. Find rule drift, risky rules, and compliance gaps across every site — automatically." />
+  <meta name="theme-color" content="#060913" />
+
+  <meta property="og:title" content="PolicyLens — Continuous Policy Audit & NIS2/DORA Posture" />
+  <meta property="og:description" content="Find rule drift, risky rules, and compliance gaps across every site — automatically. The audit your senior engineers do by hand, in minutes instead of weeks." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060913'/%3E%3Crect x='9' y='8' width='3.2' height='16' rx='1.6' fill='%2338bdf8'/%3E%3Ccircle cx='20.5' cy='16' r='5.4' fill='none' stroke='%23818cf8' stroke-width='3.2'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="Onezero home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30">
+            <rect x="9" y="6" width="3.4" height="20" rx="1.7" fill="currentColor"/>
+            <circle cx="21" cy="16" r="6.4" fill="none" stroke="currentColor" stroke-width="3.4"/>
+          </svg>
+        </span>
+        <span class="brand__name">Onezero<span class="brand__dot">.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="index.html#contact" class="btn btn--sm btn--primary">Talk to us</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#leadership">Leadership</a>
+      <a href="index.html#contact" class="btn btn--primary btn--block">Talk to us</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero hero--sub">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal"><a class="eyebrow__back" href="index.html#products">&larr; Onezero Products</a></p>
+        <span class="badge reveal">Security &amp; Compliance</span>
+        <h1 class="hero__title reveal">PolicyLens</h1>
+        <p class="hero__sub reveal">
+          Continuous security-policy audit and NIS2/DORA posture for multi-site networks —
+          find rule drift, risky rules, and compliance gaps across every site, automatically.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="index.html#contact" class="btn btn--primary btn--lg">Book a free Policy Health Check</a>
+          <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== The problem ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> The problem</p>
+          <h2 class="section__title">Security-policy sprawl is invisible — until it isn't</h2>
+        </header>
+        <div class="prose reveal">
+          <p>
+            Enterprises running dozens to hundreds of branch sites accumulate security-policy
+            debt: rules drift between sites, shadowed and overly-permissive rules pile up,
+            address objects go orphaned, and no one can prove the estate is consistent or
+            compliant.
+          </p>
+          <p>
+            Today this is audited by hand by senior engineers — slow, expensive, and stale the
+            moment it's finished. <strong>NIS2 and DORA now turn that gap into a legal and
+            board-level liability.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What it does ===== -->
+    <section class="section section--alt" id="how">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> What it does</p>
+          <h2 class="section__title">From raw config exports to clear answers</h2>
+          <p class="section__lead">
+            Ingest your firewall / SD-WAN policy exports and get back a complete picture —
+            no agents, no production changes.
+          </p>
+        </header>
+
+        <div class="capabilities">
+          <article class="capability reveal">
+            <h3 class="capability__title">Rule hygiene</h3>
+            <p>Surfaces shadowed, redundant, unused, and overly-permissive rules across the estate.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Cross-site drift</h3>
+            <p>Pinpoints where site policies have silently diverged from your standard.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Object cleanup</h3>
+            <p>Flags orphaned and duplicate address objects cluttering your configuration.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Compliance mapping</h3>
+            <p>Produces a control-gap report against NIS2 / DORA expectations.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Client-ready report</h3>
+            <p>The deliverable itself — generated in minutes, not weeks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why now ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Why now</p>
+          <h2 class="section__title">The timing isn't a coincidence</h2>
+        </header>
+        <div class="capabilities">
+          <article class="capability reveal">
+            <h3 class="capability__title">Migration wave</h3>
+            <p>The Cisco-to-SD-WAN/SASE migration wave is exposing years of accumulated policy debt.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Regulation</h3>
+            <p>NIS2 and DORA make continuous posture a recurring obligation — not a one-off audit.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Low risk to adopt</h3>
+            <p>Read-only and advisory: PolicyLens makes no production changes, so it's safe to trial.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Who it's for ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Who it's for</p>
+          <h2 class="section__title">Built for multi-site networks under scrutiny</h2>
+          <p class="section__lead">EU mid-market and enterprise running distributed networks where consistency and compliance matter.</p>
+        </header>
+        <div class="tags">
+          <span class="tag reveal">Financial services</span>
+          <span class="tag reveal">Transport &amp; logistics</span>
+          <span class="tag reveal">Public sector</span>
+          <span class="tag reveal">Retail</span>
+          <span class="tag reveal">Healthcare</span>
+          <span class="tag reveal">MSPs &amp; telcos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How to engage ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> How to engage</p>
+          <h2 class="section__title">Start small, scale to continuous</h2>
+          <p class="section__lead">Three ways to work with PolicyLens — begin with a free look at a single config.</p>
+        </header>
+
+        <div class="tiers">
+          <article class="tier reveal">
+            <h3 class="tier__name">Policy Health Check</h3>
+            <p class="tier__price">Free</p>
+            <p class="tier__desc">Scan one configuration and see the problems — rule hygiene and the most pressing risks, summarized.</p>
+            <a class="btn btn--ghost btn--block" href="index.html#contact">Request a Health Check</a>
+          </article>
+
+          <article class="tier reveal">
+            <h3 class="tier__name">Posture Assessment</h3>
+            <p class="tier__price">Contact for pricing</p>
+            <p class="tier__desc">A full multi-site audit with a complete report and NIS2 / DORA control-gap mapping. One-time engagement.</p>
+            <a class="btn btn--ghost btn--block" href="index.html#contact">Get a quote</a>
+          </article>
+
+          <article class="tier tier--featured reveal">
+            <span class="tier__tag">Recommended</span>
+            <h3 class="tier__name">Continuous Monitoring</h3>
+            <p class="tier__price">Contact for pricing</p>
+            <p class="tier__desc">Ongoing drift detection with quarterly compliance reporting — stay audit-ready year-round as your estate changes.</p>
+            <a class="btn btn--primary btn--block" href="index.html#contact">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why us ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Why Onezero</p>
+          <h2 class="section__title">Built by practitioners, accelerated by AI</h2>
+          <p class="section__lead">
+            PolicyLens is built by practitioners who run these migrations and audits hands-on.
+            The rule logic is encoded by engineers who know what <em>"correct"</em> looks like
+            across real multi-vendor, multi-site estates — so the findings reflect judgment, not
+            just pattern-matching.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="cta-band__title">See your policy estate clearly.</h2>
+          <p class="cta-band__text">Start with a free Policy Health Check on a single config — no commitment, no production changes.</p>
+          <a href="index.html#contact" class="btn btn--primary btn--lg">Book a free Policy Health Check</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Onezero home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26">
+              <rect x="9" y="6" width="3.4" height="20" rx="1.7" fill="currentColor"/>
+              <circle cx="21" cy="16" r="6.4" fill="none" stroke="currentColor" stroke-width="3.4"/>
+            </svg>
+          </span>
+          <span class="brand__name">Onezero<span class="brand__dot">.</span></span>
+        </a>
+        <p class="footer__tag">Digital Business Solutions — secure, connected, intelligent.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Products">
+        <h4>Products</h4>
+        <a href="policylens.html">PolicyLens</a>
+        <a href="index.html#products">All products</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h4>Company</h4>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Onezero s. r. o.</h4>
+        <p class="footer__meta">Komárovská 39, 821 06 Bratislava</p>
+        <p class="footer__meta">Podunajské Biskupice, Slovakia</p>
+        <p class="footer__meta">IČO: 52&nbsp;454&nbsp;002 &middot; DIČ: 2121046367</p>
+        <p class="footer__meta"><a href="mailto:onezerosro@gmail.com">onezerosro@gmail.com</a></p>
+        <p class="footer__meta"><a href="tel:+421911425598">+421 911 425 598</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bar">
+      <p>&copy; <span id="year">2026</span> Onezero s.r.o. All rights reserved.</p>
+      <p class="footer__legal"><a href="index.html">Home</a> &middot; <a href="policylens.html">PolicyLens</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
