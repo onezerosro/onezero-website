@@ -89,7 +89,7 @@
   if (canvas && !prefersReduced) {
     const ctx = canvas.getContext("2d");
     let w, h, dpr, nodes, raf;
-    const COLORS = ["56,189,248", "129,140,248", "167,139,250"];
+    const COLORS = ["14,165,233", "99,102,241", "124,58,237"];
 
     const resize = () => {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
