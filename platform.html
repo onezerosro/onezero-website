@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance Platform — One Engine, Many Modules | Onezero</title>
+  <meta name="description" content="The Onezero Compliance Platform: one engine, many modules for NIS2, DORA, and GDPR. Ingest config and telemetry once, normalize it once, and run every compliance check against it — with an Audit Room for regulator-ready evidence." />
+  <meta name="theme-color" content="#060913" />
+
+  <meta property="og:title" content="Onezero Compliance Platform — One Engine, Many Modules" />
+  <meta property="og:description" content="One engine for NIS2 / DORA / GDPR. PolicyLens and PolicyPort are the first modules; the Audit Room turns their output into regulator-ready evidence." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23060913'/%3E%3Crect x='9' y='8' width='3.2' height='16' rx='1.6' fill='%2338bdf8'/%3E%3Ccircle cx='20.5' cy='16' r='5.4' fill='none' stroke='%23818cf8' stroke-width='3.2'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html" aria-label="Onezero home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30">
+            <rect x="9" y="6" width="3.4" height="20" rx="1.7" fill="currentColor"/>
+            <circle cx="21" cy="16" r="6.4" fill="none" stroke="currentColor" stroke-width="3.4"/>
+          </svg>
+        </span>
+        <span class="brand__name">Onezero<span class="brand__dot">.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#services">Services</a>
+        <a href="platform.html">Platform</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="index.html#contact" class="btn btn--sm btn--primary">Talk to us</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="index.html#services">Services</a>
+      <a href="platform.html">Platform</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#leadership">Leadership</a>
+      <a href="index.html#contact" class="btn btn--primary btn--block">Talk to us</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero hero--sub">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal"><a class="eyebrow__back" href="index.html">&larr; Onezero</a></p>
+        <span class="badge reveal">Compliance Platform</span>
+        <h1 class="hero__title reveal">One engine, many compliance modules</h1>
+        <p class="hero__sub reveal">
+          Ingest your network and security config and telemetry once, normalize it once, and run
+          every NIS2 / DORA / GDPR check against it — with an <strong>Audit Room</strong> that
+          turns the results into regulator-ready evidence.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="index.html#contact" class="btn btn--primary btn--lg">Talk to us</a>
+          <a href="#modules" class="btn btn--ghost btn--lg">See the modules</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== The idea ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> The idea</p>
+          <h2 class="section__title">Separate tools, one shared core</h2>
+        </header>
+        <div class="prose reveal">
+          <p>
+            Migration, policy audit, control monitoring, incident reporting — they look like
+            separate tools. They're not. Each one needs the same three things: a way to read
+            heterogeneous network and security config and telemetry, a way to normalize it into
+            one model, and a way to reason about it against the rules that matter.
+          </p>
+          <p>
+            <strong>Onezero builds that core once</strong> — then every compliance capability
+            plugs into it. The result is a platform, not a drawer full of point tools.
+          </p>
+        </div>
+        <div class="tags reveal" style="margin-top:2rem">
+          <span class="tag">NIS2</span>
+          <span class="tag">DORA</span>
+          <span class="tag">GDPR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Architecture ===== -->
+    <section class="section section--alt" id="architecture">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Architecture</p>
+          <h2 class="section__title">How the platform fits together</h2>
+          <p class="section__lead">Data flows up: ingested, normalized by the shared engine, used by every module, and surfaced as evidence.</p>
+        </header>
+
+        <div class="stack reveal" role="img" aria-label="Platform architecture, bottom to top: data ingestion, core engine, modules, Audit Room">
+          <div class="stack__layer">
+            <span class="stack__label">Audit Room — evidence &amp; reporting</span>
+            <div class="stack__items">
+              <span>Unified evidence store</span>
+              <span>Board-level posture</span>
+              <span>Regulator-ready reports</span>
+              <span>Deadline tracking</span>
+            </div>
+          </div>
+          <div class="stack__arrow" aria-hidden="true">&uarr;</div>
+          <div class="stack__layer">
+            <span class="stack__label">Modules — each one a product</span>
+            <div class="stack__items">
+              <span>PolicyLens</span>
+              <span>PolicyPort</span>
+              <span>Control Monitoring</span>
+              <span>Incident Reporting</span>
+              <span>+ more</span>
+            </div>
+          </div>
+          <div class="stack__arrow" aria-hidden="true">&uarr;</div>
+          <div class="stack__layer stack__layer--engine">
+            <span class="stack__label">Core engine — built once, shared by every module</span>
+            <div class="stack__items">
+              <span>Vendor-neutral policy model</span>
+              <span>AI parse &amp; translate</span>
+              <span>Deterministic rule engine</span>
+              <span>Validation agents</span>
+              <span>NIS2 / DORA / GDPR control map</span>
+            </div>
+          </div>
+          <div class="stack__arrow" aria-hidden="true">&uarr;</div>
+          <div class="stack__layer">
+            <span class="stack__label">Data ingestion</span>
+            <div class="stack__items">
+              <span>Multi-vendor config exports</span>
+              <span>SIEM / NSS logs</span>
+              <span>Network flows &amp; topology</span>
+              <span>Identity &amp; third-party access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Modules ===== -->
+    <section class="section" id="modules">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Modules</p>
+          <h2 class="section__title">Start with one, add as you need them</h2>
+          <p class="section__lead">Every module sits on the same engine — so adopting another means more coverage, not another integration.</p>
+        </header>
+
+        <div class="modules">
+          <article class="module reveal">
+            <span class="module__status module__status--live">Live</span>
+            <h3 class="module__name">PolicyLens</h3>
+            <p class="module__desc">Continuous security-policy audit and drift detection across multi-site networks.</p>
+            <p class="module__reg">NIS2 · network security</p>
+            <a class="module__link" href="policylens.html">Explore PolicyLens &rarr;</a>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__status module__status--live">Live</span>
+            <h3 class="module__name">PolicyPort</h3>
+            <p class="module__desc">Supervised, AI-accelerated platform migration with continuous post-cutover validation.</p>
+            <p class="module__reg">Migration · validation</p>
+            <a class="module__link" href="policyport.html">Explore PolicyPort &rarr;</a>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__status module__status--soon">On the roadmap</span>
+            <h3 class="module__name">Control Monitoring &amp; Evidence</h3>
+            <p class="module__desc">Continuously monitor security controls and collect the evidence to prove them.</p>
+            <p class="module__reg">NIS2 · DORA · control requirements</p>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__status module__status--soon">On the roadmap</span>
+            <h3 class="module__name">Incident-Reporting Orchestrator</h3>
+            <p class="module__desc">Run the NIS2 24h/72h and DORA incident timelines with structured, on-time reporting.</p>
+            <p class="module__reg">NIS2 · DORA · incident reporting</p>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__status module__status--soon">On the roadmap</span>
+            <h3 class="module__name">Third-Party Access Monitor</h3>
+            <p class="module__desc">Track third-party and supply-chain connectivity and the risk that comes with it.</p>
+            <p class="module__reg">NIS2 supply chain · DORA third-party risk</p>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__status module__status--soon">On the roadmap</span>
+            <h3 class="module__name">Data-Flow &amp; Residency Mapper</h3>
+            <p class="module__desc">Map data flows and cross-border transfers across the estate.</p>
+            <p class="module__reg">GDPR · transfers</p>
+          </article>
+
+          <article class="module reveal">
+            <span class="module__status module__status--soon">On the roadmap</span>
+            <h3 class="module__name">Resilience-Testing Evidence</h3>
+            <p class="module__desc">Capture and organize evidence from operational resilience testing.</p>
+            <p class="module__reg">DORA · operational resilience</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Audit Room ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> The Audit Room</p>
+          <h2 class="section__title">Where module output becomes proof</h2>
+          <p class="section__lead">
+            Every module writes into a shared evidence store. The Audit Room turns that into a
+            board-level posture view, regulator-ready reports, and deadline tracking — the layer
+            that makes findings something an auditor or board will accept.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- ===== Why a platform ===== -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Why a platform</p>
+          <h2 class="section__title">One core, compounding value</h2>
+        </header>
+        <div class="capabilities">
+          <article class="capability reveal">
+            <h3 class="capability__title">Read once, reuse everywhere</h3>
+            <p>Your estate is ingested and normalized a single time; every module then works from the same model.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Consistent answers</h3>
+            <p>Migration, audit, monitoring, and reporting all reason against one control map — so findings line up instead of contradicting.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Evidence in one place</h3>
+            <p>The Audit Room collects every module's output into board- and auditor-ready reporting, with the deadlines tracked.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="cta-band__title">Begin with one module.</h2>
+          <p class="cta-band__text">Most engagements start with a migration or a policy health check — then grow into continuous, platform-wide compliance.</p>
+          <a href="index.html#contact" class="btn btn--primary btn--lg">Talk to us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Onezero home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26">
+              <rect x="9" y="6" width="3.4" height="20" rx="1.7" fill="currentColor"/>
+              <circle cx="21" cy="16" r="6.4" fill="none" stroke="currentColor" stroke-width="3.4"/>
+            </svg>
+          </span>
+          <span class="brand__name">Onezero<span class="brand__dot">.</span></span>
+        </a>
+        <p class="footer__tag">Digital Business Solutions — secure, connected, intelligent.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Platform">
+        <h4>Platform</h4>
+        <a href="platform.html">Compliance Platform</a>
+        <a href="policylens.html">PolicyLens</a>
+        <a href="policyport.html">PolicyPort</a>
+        <a href="index.html#products">All products</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h4>Company</h4>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#leadership">Leadership</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Onezero s. r. o.</h4>
+        <p class="footer__meta">Komárovská 39, 821 06 Bratislava</p>
+        <p class="footer__meta">Podunajské Biskupice, Slovakia</p>
+        <p class="footer__meta">IČO: 52&nbsp;454&nbsp;002 &middot; DIČ: 2121046367</p>
+        <p class="footer__meta"><a href="mailto:onezerosro@gmail.com">onezerosro@gmail.com</a></p>
+        <p class="footer__meta"><a href="tel:+421911425598">+421 911 425 598</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bar">
+      <p>&copy; <span id="year">2026</span> Onezero s.r.o. All rights reserved.</p>
+      <p class="footer__legal"><a href="index.html">Home</a> &middot; <a href="platform.html">Platform</a> &middot; <a href="policylens.html">PolicyLens</a> &middot; <a href="policyport.html">PolicyPort</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

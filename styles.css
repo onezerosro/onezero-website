@@ -478,3 +478,54 @@ p { margin: 0; }
 @media (max-width: 760px) {
   .tiers { grid-template-columns: 1fr; }
 }
+
+/* =====================================================================
+   Compliance Platform page — architecture stack + module grid
+   ===================================================================== */
+
+/* Layered architecture diagram */
+.stack { display: grid; gap: .5rem; max-width: 840px; margin-inline: auto; }
+.stack__layer {
+  border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface);
+  padding: 1.2rem 1.4rem;
+}
+.stack__layer--engine { position: relative; border-color: transparent; background: linear-gradient(180deg, var(--surface-2), var(--surface)); }
+.stack__layer--engine::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--grad);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+}
+.stack__label {
+  display: block; font-family: var(--display); font-weight: 600; font-size: .8rem;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--cyan); margin-bottom: .7rem;
+}
+.stack__items { display: flex; flex-wrap: wrap; gap: .5rem; }
+.stack__items span {
+  font-size: .82rem; color: var(--text); padding: .35rem .75rem; border-radius: 999px;
+  background: rgba(255, 255, 255, .03); border: 1px solid var(--border);
+}
+.stack__arrow { text-align: center; color: var(--faint); font-size: 1.05rem; line-height: 1; }
+
+/* Module grid */
+.modules { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+.module {
+  display: flex; flex-direction: column; padding: 1.6rem; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border); position: relative;
+  transition: transform .3s var(--ease), border-color .3s var(--ease);
+}
+.module:hover { transform: translateY(-4px); border-color: var(--border-2); }
+.module__status {
+  align-self: flex-start; font-size: .66rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; padding: .25rem .65rem; border-radius: 999px; margin-bottom: .9rem;
+}
+.module__status--live { color: #04121f; background: var(--grad); }
+.module__status--soon { color: var(--muted); background: rgba(255, 255, 255, .04); border: 1px solid var(--border-2); }
+.module__name { font-size: 1.15rem; margin-bottom: .4rem; }
+.module__desc { color: var(--muted); font-size: .93rem; flex: 1; margin-bottom: .9rem; }
+.module__reg { font-size: .8rem; color: var(--faint); font-weight: 600; letter-spacing: .03em; }
+.module__link { margin-top: .9rem; font-weight: 600; color: var(--cyan); font-size: .9rem; }
+.module__link:hover { text-decoration: underline; }
+
+@media (max-width: 560px) {
+  .stack__layer { padding: 1rem 1.1rem; }
+}
