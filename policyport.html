@@ -76,6 +76,15 @@
       </div>
     </section>
 
+    <!-- ===== Idea callout ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="callout reveal">
+          <p>The move to modern SASE / SD-WAN is <strong>inevitable</strong> — but porting thousands of policies, rules, and objects by hand doesn't scale. PolicyPort <strong>automates that processing</strong> and validates migration efficiency <strong>in real project time</strong> — and the outcome report <strong>proves a gapless transition</strong>.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== The problem ===== -->
     <section class="section">
       <div class="container">
@@ -130,6 +139,62 @@
           <article class="capability reveal">
             <h3 class="capability__title">Objects</h3>
             <p>Address objects, groups, and FQDNs — normalized and de-duplicated, not blindly copied.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Use cases: many vendors -> one ===== -->
+    <section class="section" id="usecases">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Use cases</p>
+          <h2 class="section__title">Many vendors in, one platform out</h2>
+          <p class="section__lead">Whatever you run today, PolicyPort reads it, normalizes it into one model, and emits a single validated policy set for the target platform.</p>
+        </header>
+
+        <div class="converge reveal">
+          <div class="converge__sources">
+            <div class="cfg"><div class="cfg__head">Cisco</div><pre class="cfg__body">access-list 110 permit tcp
+  any host 10.1.1.10 eq 443
+crypto map VPN 10 ipsec-isakmp
+router bgp 65001</pre></div>
+            <div class="cfg"><div class="cfg__head">Fortinet</div><pre class="cfg__body">config firewall policy
+  edit 1
+    set dstaddr "web-srv"
+    set service "HTTPS"
+    set action accept</pre></div>
+            <div class="cfg"><div class="cfg__head">Check Point</div><pre class="cfg__body">add access-rule layer "Network"
+  name "Allow-Web"
+  source "Any"  service "https"
+  action "Accept"</pre></div>
+          </div>
+          <div class="converge__arrow" aria-hidden="true">&rarr;</div>
+          <div class="converge__chip">PolicyPort engine<span>parse &middot; normalize &middot; validate</span></div>
+          <div class="converge__arrow" aria-hidden="true">&rarr;</div>
+          <div class="converge__target">
+            <div class="cfg cfg--target"><div class="cfg__head">Unified SD-WAN / SASE policy</div><pre class="cfg__body">policy "Allow-Web" {
+  match { app: HTTPS
+          dst: web-srv }
+  action: allow
+  status: validated &check;
+}</pre></div>
+          </div>
+        </div>
+        <p class="converge__cap">Illustrative — source syntax varies by platform. Multi-vendor configs are parsed into one vendor-neutral model, reviewed by an expert, then emitted as a single validated target policy.</p>
+
+        <div class="capabilities" style="margin-top: 2.6rem">
+          <article class="capability reveal">
+            <h3 class="capability__title">Vendor consolidation</h3>
+            <p>Collapse several firewall and SD-WAN vendors onto one platform, estate-wide.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">Branch / hardware refresh</h3>
+            <p>Re-home hundreds of branches during a refresh — without re-deriving policy by hand.</p>
+          </article>
+          <article class="capability reveal">
+            <h3 class="capability__title">M&amp;A integration</h3>
+            <p>Fold an acquired network into your standard build, fast and verifiably.</p>
           </article>
         </div>
       </div>
