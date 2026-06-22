@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PolicyLens — Continuous Policy Audit & NIS2/DORA Posture | Onezero</title>
   <meta name="description" content="PolicyLens by Onezero — NIS2 firewall policy audit, DORA network compliance posture, and multi-site security policy drift detection. Find rule drift, risky rules, and compliance gaps across every site, automatically." />
-  <meta name="theme-color" content="#060913" />
+  <meta name="theme-color" content="#ffffff" />
 
   <meta property="og:title" content="PolicyLens — Continuous Policy Audit & NIS2/DORA Posture" />
   <meta property="og:description" content="Find rule drift, risky rules, and compliance gaps across every site — automatically. The audit your senior engineers do by hand, in minutes instead of weeks." />
@@ -133,6 +133,157 @@
             <p>The deliverable itself — generated in minutes, not weeks.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== Use cases ===== -->
+    <section class="section" id="usecases">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Use cases</p>
+          <h2 class="section__title">What PolicyLens finds — and proves</h2>
+          <p class="section__lead">Two real-world scenarios where continuous policy intelligence makes the difference between a clean audit and a compliance incident.</p>
+        </header>
+
+        <div class="uc">
+
+          <!-- UC 1: Migration gap + manual change -->
+          <div class="uc-item reveal">
+            <div class="uc-meta">
+              <div class="uc-num">1</div>
+              <h3 class="uc-title">Catch what migration missed — and what an engineer changed overnight</h3>
+              <p class="uc-lead">When platforms are cut over, rules are complex and translators aren't perfect. PolicyLens continuously compares source and target policy sets — and flags any manual change made outside the change window.</p>
+              <ul class="uc-points">
+                <li><strong>Migration gap detected:</strong> a critical deny rule for RDP traffic existed on the source platform but was not ported to the target — silently leaving an exposure.</li>
+                <li><strong>Unauthorized manual edit:</strong> an engineer expanded a destination from a subnet to ANY at 08:47 — outside any approved change window and not logged in the ITSM.</li>
+                <li><strong>Immediate alert, attributed finding:</strong> PolicyLens surfaces both within minutes of the next config pull, with the rule ID, site, and the exact delta — ready to attach to an incident ticket.</li>
+              </ul>
+            </div>
+            <div class="uc-panel" role="img" aria-label="Policy audit finding: migration gap and manual change alert">
+              <div class="uc-panel__bar">
+                <div class="uc-panel__dots"><span></span><span></span><span></span></div>
+                <span class="uc-panel__title">PolicyLens — Post-Migration Rule Audit</span>
+                <span class="uc-panel__ts">Jun 21 &nbsp;09:14 UTC</span>
+              </div>
+              <table class="uc-tbl">
+                <thead>
+                  <tr>
+                    <th>Rule</th>
+                    <th>Source</th>
+                    <th>Target</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>permit tcp → ERP :443</td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--ok">OK</span></td>
+                  </tr>
+                  <tr class="uc-row--alert">
+                    <td>deny any → DMZ :3389</td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--err">✗ missing</span></td>
+                    <td><span class="uc-badge uc-badge--err">⚠ GAP</span></td>
+                  </tr>
+                  <tr>
+                    <td>permit MGMT → CORE</td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--ok">OK</span></td>
+                  </tr>
+                  <tr>
+                    <td>permit VOIP → SIP :5060</td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--ok">✓ found</span></td>
+                    <td><span class="uc-badge uc-badge--ok">OK</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="uc-alert">
+                <span class="uc-alert__icon">⚠</span>
+                <div class="uc-alert__body">
+                  <strong>Manual change — outside change window</strong><br>
+                  Rule <code>allow-PRINT-access</code> · site BR-042 · modified <strong>08:47</strong> by <strong>j.novak</strong><br>
+                  <span class="uc-alert__sub">dst changed: <code>10.2.0.0/24</code> → <code>0.0.0.0/0 (ANY)</code> &nbsp;·&nbsp; No approved CR found</span>
+                </div>
+              </div>
+              <div class="uc-footer">
+                <span>2 findings &nbsp;·&nbsp; site BR-042</span>
+                <span class="uc-badge uc-badge--err">Action required</span>
+              </div>
+            </div>
+          </div><!-- /UC 1 -->
+
+          <!-- UC 2: Daily audit report -->
+          <div class="uc-item reveal">
+            <div class="uc-meta">
+              <div class="uc-num">2</div>
+              <h3 class="uc-title">Daily policy report — stored, attributable, auditable</h3>
+              <p class="uc-lead">An enterprise can't prove NIS2 or DORA compliance with spot-checks. PolicyLens generates a timestamped, attributable daily record of every rule and object change across the entire estate — stored automatically in the Audit Room.</p>
+              <ul class="uc-points">
+                <li><strong>Complete change log, by person:</strong> every addition, modification, and deletion is recorded with the engineer's identity, site, and exact timestamp — no manual log required.</li>
+                <li><strong>Baseline snapshot included:</strong> the report captures not just what changed but the full current state — so an auditor can compare any day against any prior day.</li>
+                <li><strong>Stored as evidence:</strong> each report is written to the Audit Room evidence store, date-stamped and tamper-evident — attachable directly to a NIS2 Art. 21 or DORA Art. 11 control response.</li>
+              </ul>
+            </div>
+            <div class="uc-panel" role="img" aria-label="Daily policy change report with audit trail">
+              <div class="uc-panel__bar">
+                <div class="uc-panel__dots"><span></span><span></span><span></span></div>
+                <span class="uc-panel__title">Daily Policy Report &nbsp;·&nbsp; Jun 21 2026</span>
+                <span class="uc-panel__ts">Generated 00:05 UTC</span>
+              </div>
+              <div style="display:flex;gap:.7rem;padding:.55rem .85rem;border-bottom:1px solid var(--border);background:var(--surface-2);font-size:.7rem;color:var(--muted)">
+                <span>Sites: <strong style="color:var(--text)">47</strong></span>
+                <span>Rules: <strong style="color:var(--text)">2,841</strong></span>
+                <span>Objects: <strong style="color:var(--text)">1,203</strong></span>
+                <span style="margin-left:auto"><span class="uc-badge uc-badge--ok">● Stored to evidence</span></span>
+              </div>
+              <table class="uc-tbl">
+                <thead>
+                  <tr>
+                    <th>Rule / object</th>
+                    <th>Changed by</th>
+                    <th>Time</th>
+                    <th>Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="uc-row--warn">
+                    <td>allow-PRINT-access</td>
+                    <td>j.novak</td>
+                    <td>08:47</td>
+                    <td><span class="uc-badge uc-badge--mod">MODIFIED</span></td>
+                  </tr>
+                  <tr>
+                    <td>block-tor-exit-nodes</td>
+                    <td>firewall-auto</td>
+                    <td>03:12</td>
+                    <td><span class="uc-badge uc-badge--new">ADDED</span></td>
+                  </tr>
+                  <tr>
+                    <td>permit-MGMT-VLAN</td>
+                    <td>a.kolar</td>
+                    <td>22:31</td>
+                    <td><span class="uc-badge uc-badge--mod">MODIFIED</span></td>
+                  </tr>
+                  <tr>
+                    <td>deny-legacy-DMZ</td>
+                    <td>m.horak</td>
+                    <td>17:54</td>
+                    <td><span class="uc-badge uc-badge--del">DELETED</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="uc-footer">
+                <span><strong>4 changes</strong> across 3 sites in last 24 h</span>
+                <span class="uc-badge uc-badge--info">NIS2 Art. 21 · DORA Art. 11</span>
+              </div>
+            </div>
+          </div><!-- /UC 2 -->
+
+        </div><!-- /uc -->
       </div>
     </section>
 
