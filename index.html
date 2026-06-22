@@ -78,20 +78,15 @@
           Secure every site. <span class="grad">Prove every policy.</span>
         </h1>
         <p class="hero__sub reveal">
-          Onezero migrates, audits, and continuously verifies multi-site networks —
-          so you connect faster, stay compliant, and can prove it.
+          Most multi-site networks have policy drift nobody knows about.
+          Migrations leave gaps that pass undetected for weeks.
+          And when the NIS2 auditor arrives, the evidence doesn't exist yet.
+          Onezero fixes all three — and proves it.
         </p>
         <div class="hero__cta reveal">
-          <a href="#services" class="btn btn--primary btn--lg">Explore services</a>
+          <a href="#questions" class="btn btn--primary btn--lg">See if this is you</a>
           <a href="#contact" class="btn btn--ghost btn--lg">Book a consultation</a>
         </div>
-
-        <ul class="hero__chips reveal" aria-label="Core capabilities">
-          <li>SD-WAN / SASE migration</li>
-          <li>Policy audit &amp; drift</li>
-          <li>NIS2 / DORA compliance</li>
-          <li>Continuous validation</li>
-        </ul>
       </div>
     </section>
 
@@ -99,20 +94,53 @@
     <section class="stats" aria-label="By the numbers">
       <div class="container stats__grid">
         <div class="stat reveal">
-          <span class="stat__num" data-count="15" data-suffix="+">15+</span>
-          <span class="stat__label">Years of combined engineering expertise</span>
+          <span class="stat__num" data-count="500" data-suffix="+">500+</span>
+          <span class="stat__label">Sites migrated to SD-WAN — founder-led</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__num" data-count="99.99" data-suffix="%" data-decimals="2">99.99%</span>
-          <span class="stat__label">Network uptime we design and operate to</span>
+          <span class="stat__num" data-count="48" data-suffix=" h">48 h</span>
+          <span class="stat__label">To your first policy audit report</span>
         </div>
         <div class="stat reveal">
           <span class="stat__num" data-count="40" data-suffix="%">40%</span>
           <span class="stat__label">Typical WAN cost reduction with SD-WAN</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__num" data-count="24" data-suffix="/7">24/7</span>
-          <span class="stat__label">Monitoring and response coverage</span>
+          <span class="stat__num">NIS2<br>DORA<br>GDPR</span>
+          <span class="stat__label">All three frameworks — one evidence store</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Q&A / Provocation ===== -->
+    <section class="section section--alt" id="questions">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> Does this sound familiar?</p>
+          <h2 class="section__title">The questions our customers couldn't answer — until now.</h2>
+        </header>
+
+        <div class="qa-grid">
+          <article class="qa reveal">
+            <span class="qa__q-mark" aria-hidden="true">"</span>
+            <p class="qa__q">Our NIS2 audit is in 30 days. Can I show the auditor which firewall rules changed last week — and who authorized each one?</p>
+            <p class="qa__a">PolicyLens pulls your policy config daily, tracks every change against a stored baseline, and attributes each delta to a user, timestamp, and site. The auditor gets a dated evidence report — not a spreadsheet assembled the night before.</p>
+            <a class="qa__link" href="policylens.html">PolicyLens — Continuous Policy Audit &rarr;</a>
+          </article>
+
+          <article class="qa reveal">
+            <span class="qa__q-mark" aria-hidden="true">"</span>
+            <p class="qa__q">We're migrating 2,000+ firewall rules to a new platform. How do we know on cutover day that nothing was missed?</p>
+            <p class="qa__a">PolicyPort processes every rule, object, and NAT entry from the source, normalizes and validates the translation, and runs continuous post-cutover checks. A gapless transition report proves exactly what moved — and that it works.</p>
+            <a class="qa__link" href="policyport.html">PolicyPort — Migration &amp; Validation &rarr;</a>
+          </article>
+
+          <article class="qa reveal">
+            <span class="qa__q-mark" aria-hidden="true">"</span>
+            <p class="qa__q">We manage 47 sites. Which branch has a policy that diverged from the baseline — and when did it happen?</p>
+            <p class="qa__a">PolicyLens cross-compares policy sets across your entire estate on a daily cycle. When Branch 34 diverges — by an unauthorized manual edit or a failed sync — you see it with a full diff before it becomes a risk or a regulator's finding.</p>
+            <a class="qa__link" href="policylens.html">PolicyLens — Cross-site Drift Detection &rarr;</a>
+          </article>
         </div>
       </div>
     </section>
@@ -122,10 +150,10 @@
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow"><span class="eyebrow__dot"></span> What we do</p>
-          <h2 class="section__title">Solutions engineered end to end</h2>
+          <h2 class="section__title">From design to proof of compliance</h2>
           <p class="section__lead">
-            Three practices, one delivery team — AI-accelerated, end to end. We architect,
-            build, and operate the connectivity and security your business runs on.
+            One team that architects, builds, migrates, and continuously validates — so
+            you don't hand off between vendors and lose accountability mid-project.
           </p>
         </header>
 
@@ -139,9 +167,9 @@
             </div>
             <h3 class="card__title">Cybersecurity &amp; SASE</h3>
             <p class="card__text">
-              Converged security and networking delivered from the cloud. We design and
-              roll out Zero Trust access, secure web gateways, CASB, FWaaS, and ZTNA
-              that protect your users and data anywhere they work.
+              Your users work from everywhere — your security perimeter can't be a box in a rack anymore.
+              We replace fragmented firewall + VPN setups with converged, cloud-delivered protection
+              that follows the user, not the building.
             </p>
             <ul class="card__list">
               <li>Zero Trust Network Access (ZTNA)</li>
@@ -160,9 +188,9 @@
             </div>
             <h3 class="card__title">SD-WAN</h3>
             <p class="card__text">
-              Intelligent, application-aware connectivity that lowers cost and raises
-              performance across every site, cloud, and remote user — with centralized
-              policy and full visibility.
+              MPLS is expensive and inflexible. Unmanaged broadband is unreliable.
+              SD-WAN threads the needle — intelligent routing across any transport,
+              with 40% typical cost savings and the application performance your business expects.
             </p>
             <ul class="card__list">
               <li>Application-aware routing &amp; QoS</li>
@@ -179,11 +207,11 @@
                 <path d="M7 6.5h.01M7 17.5h.01M12 9v6"/>
               </svg>
             </div>
-            <h3 class="card__title">Network Engineering Consultancy &amp; Implementation</h3>
+            <h3 class="card__title">Network Engineering &amp; Implementation</h3>
             <p class="card__text">
-              From architecture and design to deployment and day-2 operations — senior
-              engineers who build resilient, scalable networks and migrate you there
-              with zero drama.
+              Complex migrations fail when you hand the design to one team and the build to another.
+              We keep both under one roof — senior engineers who wrote the architecture are the
+              ones on cutover night.
             </p>
             <ul class="card__list">
               <li>Architecture, design &amp; audits</li>
@@ -216,21 +244,32 @@
               Continuous security-policy audit &amp; NIS2/DORA posture for multi-site networks.
             </p>
             <p class="product-feature__text">
-              Find rule drift, risky and shadowed rules, orphaned objects, and compliance
-              gaps across every site &mdash; automatically, in minutes instead of weeks.
+              Export configs from your firewalls. Within 48 hours, PolicyLens returns every
+              rule checked, risks ranked by severity, NIS2/DORA control gaps mapped, and a
+              remediation priority list — ready to hand to your security team or your auditor.
             </p>
             <div class="product-feature__actions">
               <a class="btn btn--primary" href="policylens.html">Explore PolicyLens &rarr;</a>
               <a class="btn btn--ghost" href="#contact">Book a Policy Health Check</a>
             </div>
           </div>
-          <ul class="product-feature__list">
-            <li>Rule hygiene &mdash; shadowed, redundant &amp; risky rules</li>
-            <li>Cross-site policy drift detection</li>
-            <li>Orphaned &amp; duplicate object cleanup</li>
-            <li>NIS2 / DORA control-gap mapping</li>
-            <li>Client-ready reports in minutes</li>
-          </ul>
+          <div class="outcome-box">
+            <span class="outcome-box__label">What a Policy Health Check delivers</span>
+            <div class="outcome-steps">
+              <div class="outcome-step">
+                <span class="outcome-step__tag">Day 0</span>
+                <p>Export configs from your firewalls — we handle the rest.</p>
+              </div>
+              <div class="outcome-step">
+                <span class="outcome-step__tag">48 hours</span>
+                <p>Every rule checked, risks ranked, NIS2/DORA gaps identified, remediation priority set.</p>
+              </div>
+              <div class="outcome-step">
+                <span class="outcome-step__tag">Ongoing</span>
+                <p>Daily drift alerts. Any change, any site, any engineer — attributed and stored as auditable evidence.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="product-feature reveal">
@@ -241,21 +280,33 @@
               Expert-supervised, AI-accelerated platform migration &mdash; with continuous post-migration validation.
             </p>
             <p class="product-feature__text">
-              Port routing, SD-WAN, and security estates between platforms without the manual
-              re-derivation, the cutover outages, or the post-migration blind spots.
+              You have thousands of rules, objects, and NAT entries to move. PolicyPort parses
+              every one, normalizes to a vendor-neutral model, and validates the translation —
+              before a single rule touches production. Cutover day comes with a gapless
+              transition report attached.
             </p>
             <div class="product-feature__actions">
               <a class="btn btn--primary" href="policyport.html">Explore PolicyPort &rarr;</a>
               <a class="btn btn--ghost" href="#contact">Book a migration assessment</a>
             </div>
           </div>
-          <ul class="product-feature__list">
-            <li>Full-stack porting: routing, SD-WAN, security &amp; objects</li>
-            <li>Expert review before anything hits production</li>
-            <li>Both directions &mdash; legacy &harr; modern SASE</li>
-            <li>Continuous pass/fail validation after cutover</li>
-            <li>Shadow &amp; redundancy cleanup along the way</li>
-          </ul>
+          <div class="outcome-box">
+            <span class="outcome-box__label">What a migration engagement delivers</span>
+            <div class="outcome-steps">
+              <div class="outcome-step">
+                <span class="outcome-step__tag">Before</span>
+                <p>Thousands of Cisco / Fortinet / Check Point rules. No clear picture of what's safe to cut over.</p>
+              </div>
+              <div class="outcome-step">
+                <span class="outcome-step__tag">During</span>
+                <p>Every rule parsed, translated, validated, and expert-reviewed before production — shadowed rules cleaned up in the process.</p>
+              </div>
+              <div class="outcome-step">
+                <span class="outcome-step__tag">After</span>
+                <p>Gapless transition report: what moved, what was cleaned, what was validated — proof of a complete migration.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <p class="products__note reveal">
@@ -278,8 +329,7 @@
             <span class="proof__label">sites migrated to SD-WAN<br>(founder-led)</span>
           </div>
           <div class="proof__body">
-            <p>Onezero's founder has led enterprise migrations at scale — including moving a <strong>500+ site transport operator</strong> from legacy Cisco DMVPN to a modern SD-WAN platform, delivered alongside a national telco integrator, with a zero-drama phased cutover.</p>
-            <p>That hands-on delivery experience is what the Onezero method and tooling are built on. First-party Onezero case studies will be published as engagements complete.</p>
+            <p>A <strong>500+ site transport operator</strong> — Cisco DMVPN to modern SD-WAN, delivered alongside a national telco integrator, phased cutover, zero outages. The Onezero platform and delivery method were built on that project. Engagement case studies will be published as clients approve.</p>
           </div>
         </div>
       </div>
@@ -326,48 +376,21 @@
       <div class="container about">
         <div class="about__copy reveal">
           <p class="eyebrow"><span class="eyebrow__dot"></span> Why Onezero</p>
-          <h2 class="section__title">Engineering-first. Outcome-obsessed.</h2>
+          <h2 class="section__title">Senior engineers. Measurable outcomes.</h2>
           <p class="about__text">
-            Our name says it: everything digital comes down to <strong>one</strong> and
-            <strong>zero</strong>. We turn those building blocks into secure, high-performing
-            systems that move your business forward — without the complexity that usually
-            comes with it.
-          </p>
-          <p class="about__text">
-            Onezero s.r.o. is a team of senior network and security engineers paired with
-            AI practitioners. We stay vendor-savvy and outcome-driven, so you get the right
-            technology for the result you need — implemented by the people who designed it.
+            Onezero is a team of senior network and security engineers paired with AI practitioners.
+            We stay vendor-savvy and outcome-driven — the people who design the solution are
+            the people who implement it, and the tools we've built validate that it works.
           </p>
 
           <ul class="features">
             <li class="reveal"><span class="features__ico">✓</span> Security-first by default</li>
-            <li class="reveal"><span class="features__ico">✓</span> AI-native delivery</li>
+            <li class="reveal"><span class="features__ico">✓</span> AI-accelerated delivery</li>
             <li class="reveal"><span class="features__ico">✓</span> Vendor-savvy, not vendor-locked</li>
             <li class="reveal"><span class="features__ico">✓</span> Senior engineers, end to end</li>
           </ul>
+          <a href="#contact" class="btn btn--primary" style="margin-top:1.8rem">Start a conversation &rarr;</a>
         </div>
-
-        <aside class="about__panel reveal" aria-label="At a glance">
-          <div class="panel">
-            <div class="panel__row">
-              <span class="panel__k">Headquarters</span>
-              <span class="panel__v">Slovakia &middot; serving EU &amp; beyond</span>
-            </div>
-            <div class="panel__row">
-              <span class="panel__k">Focus</span>
-              <span class="panel__v">SASE &middot; SD-WAN &middot; Network &middot; AI Ops</span>
-            </div>
-            <div class="panel__row">
-              <span class="panel__k">Engagements</span>
-              <span class="panel__v">Consulting &middot; Implementation &middot; Managed</span>
-            </div>
-            <div class="panel__row">
-              <span class="panel__k">Model</span>
-              <span class="panel__v">Outcome-based delivery</span>
-            </div>
-            <a href="#contact" class="btn btn--primary btn--block">Start a conversation</a>
-          </div>
-        </aside>
       </div>
     </section>
 
@@ -393,16 +416,10 @@
             <h3 class="founder__name">Matej Kultan</h3>
             <p class="founder__role">Founder &amp; CEO</p>
             <p class="founder__bio">
-              Matej founded Onezero to make enterprise-grade networking and security
-              practical for businesses of every size. He brings hands-on experience from a
-              global leader in SASE and SD-WAN &mdash; working at the cutting edge of secure,
-              software-defined connectivity &mdash; paired with a strong focus on AI-driven
-              operations that turn technology into measurable business outcomes.
-            </p>
-            <p class="founder__bio">
-              That blend of deep network engineering and an automation-first mindset shapes
-              how Onezero designs, implements, and runs every solution: secure by default,
-              built to scale, and delivered by the people who architected it.
+              15+ years in enterprise network and security engineering, including leading the
+              migration of a 500+ site transport operator from legacy Cisco DMVPN to modern
+              SD-WAN — at a global leader in SASE and SD-WAN, alongside a national telco integrator.
+              That delivery experience is what Onezero's tools and method are built on.
             </p>
             <ul class="founder__tags">
               <li>SASE &amp; Zero Trust</li>

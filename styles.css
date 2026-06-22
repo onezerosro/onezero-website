@@ -697,4 +697,49 @@ p { margin: 0; }
 .legal li { margin-bottom: .4rem; }
 .legal a { color: var(--cyan); }
 .legal a:hover { text-decoration: underline; }
+
+/* =====================================================================
+   Q&A / provocative questions section (homepage)
+   ===================================================================== */
+.qa-grid { display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+.qa {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.8rem 2rem; display: flex; flex-direction: column; gap: 1rem;
+  transition: box-shadow .2s, border-color .2s;
+}
+.qa:hover { box-shadow: var(--shadow); border-color: var(--border-2); }
+.qa__q-mark {
+  font-family: Georgia, 'Times New Roman', serif; font-size: 2.4rem; line-height: .9;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent; user-select: none;
+}
+.qa__q { font-size: 1rem; font-weight: 700; color: var(--text); line-height: 1.5; }
+.qa__a { font-size: .88rem; color: var(--muted); line-height: 1.75; flex: 1; }
+.qa__link {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: .82rem; font-weight: 600; color: var(--cyan); text-decoration: none;
+  margin-top: auto;
+}
+.qa__link:hover { text-decoration: underline; }
+
+/* =====================================================================
+   Outcome scenario boxes (homepage products)
+   ===================================================================== */
+.outcome-box {
+  background: var(--bg-2); border: 1px solid var(--border); border-radius: calc(var(--radius) - 2px);
+  padding: 1.4rem 1.6rem; margin-top: 1.2rem;
+}
+.outcome-box__label {
+  font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--faint); margin-bottom: 1rem; display: block;
+}
+.outcome-steps { display: grid; gap: .85rem; }
+.outcome-step { display: grid; grid-template-columns: 5.5rem 1fr; gap: .8rem; align-items: baseline; }
+.outcome-step__tag {
+  font-size: .72rem; font-weight: 700; font-family: var(--display);
+  background: var(--grad); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+  white-space: nowrap;
+}
+.outcome-step p { font-size: .88rem; color: var(--muted); margin: 0; line-height: 1.65; }
 .legal strong { color: var(--text); }
